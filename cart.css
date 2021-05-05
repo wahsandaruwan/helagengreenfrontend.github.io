@@ -1,0 +1,328 @@
+/* This file is for cart.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+/* -----Reset----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* -----Common----- */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+/* -----Header----- */
+header{
+    position: relative;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #fff;
+}
+
+/* Logo */
+header .logo a{
+    font-family: 'Niconne';
+    font-size: 3rem;
+    color: #2ECC71;
+}
+
+/* Nav Menu */
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu li:not(:first-child){
+    margin-left: 40px;
+}
+
+header .menu li .ab-btn,
+header .menu li .con-btn{
+    padding: 7px 30px;
+    border: 3px #2ECC71 solid;
+    border-radius: 30px;
+    color: #2ECC71;
+}
+
+header .menu li .ab-btn:hover,
+header .menu li .con-btn:hover{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+header .menu li .sisu-btn{
+    padding: 7px 30px;
+    border: 3px #2ECC71 solid;
+    border-radius: 30px;
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+header .menu li .cart-btn{
+    background-color: #2ECC71;
+    border: 3px #2ECC71 solid;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+header .menu li .sisu-btn:hover,
+header .menu li .cart-btn:hover{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* -----Back Shape----- */
+.backsh{
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    max-width: 1400px;
+    z-index: 1;
+}
+
+.backsh img{
+    width: 100%;
+}
+
+/* -----Container----- */
+.container{
+    background-color: #fff;
+    position: relative;
+    z-index: 11;
+    width: 95%;
+    margin: 0 auto;
+    border: 3px #2ECC71 solid;
+    border-radius: 43px;
+    min-height: 83vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.container .tbl{
+    width: 100%;
+    max-width: 900px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+/* Table */
+.container .tbl table{
+    width: 100%;
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin-bottom: 20px;
+}
+
+.container .tbl table thead .heading{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.container .tbl table thead .heading th{
+    border: 2px #2ECC71 solid;
+    padding: 10px 40px;
+    color: #2ECC71;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container .tbl table thead .heading th:nth-of-type(odd){
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .tbl table thead .heading th:first-child{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.container .tbl table thead .heading th:last-child{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container .tbl table tbody tr{
+    width: 100%;
+}
+
+.container .tbl table tbody tr td{
+    padding: 10px;
+    text-align: center;
+    border: 2px #2ECC71 solid;
+    color: #2ECC71;
+    font-size: 1rem;
+}
+
+.container .tbl table tbody tr td:first-child{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.container .tbl table tbody tr td:last-child{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container .tbl table tbody tr .image{
+    width: 70px;
+    height: 100px;
+}
+
+.container .tbl table tbody tr .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.container .tbl table tbody tr .del i{
+    color: #fd3737;
+    font-size: 2rem;
+}
+
+.container .tbl table tbody tr .qt label{
+    margin-right: 10px;
+}
+
+.container .tbl table tbody tr .qt input{
+    width: 80px;
+    height: 35px;
+    border: 2px #2ECC71 solid;
+    border-radius: 25px;
+    padding: 3px 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Payment */
+.container .pay{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.container .pay .s-total{
+    font-size: 1.8rem;
+    color: #2ECC71;
+    margin-bottom: 20px;
+}
+
+.container .pay .pay-btn a{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px #2ECC71 solid;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+.container .pay .pay-btn .con-shop{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+.container .pay .pay-btn .con-shop:hover{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .pay .pay-btn .checkout{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .pay .pay-btn .checkout:hover{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* -----Social Icons----- */
+.social{
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 12;
+    padding: 15px 6px;
+    border: 3px #2ECC71 solid;
+    border-radius: 35px;
+}
+.social a{
+    display: block;
+}
+
+.social a img{
+    max-width: 40px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+}
+
+/* -----Footer----- */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+footer .company{
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .credit{
+    color: #2ECC71;
+    font-size: 1rem;
+}
+
+@media(max-height: 900px){
+    .container{
+        margin-top: 50px;
+    }
+
+    footer{
+        position: relative;
+    }
+}
+
+@media(max-width: 1700px){
+    .container .prod-des{
+        flex-wrap: wrap;
+    }
+}

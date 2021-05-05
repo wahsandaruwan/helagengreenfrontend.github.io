@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./index.html">Helagen Green</a>
+        </div>
+        <!-- Nav Menu -->
+        <ul class="menu">
+            <li><a href="./cart.html" class="cart-btn"><i class="fas fa-user-tie"></i>Saman123</a></li>
+        </ul>
+    </header>
+    <!-- Background Images -->
+    <div class="backsh">
+        <img src="./res/backsh.svg" alt="">
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Admin Section -->
+        <div class="search">
+            <input type="text" class="sch" placeholder="Search...">
+            <select id="se-sel">
+                <option value="none" disabled selected>None</option>
+                <option value="none1">None1</option>
+                <option value="none2">None2</option>
+            </select>
+        </div>
+        <div class="admin-sec">
+            <div class="smenu">
+                <a href="#"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                <a href="./dash1.html" class="man"><i class="fab fa-product-hunt"></i>Manage Products</a>
+                <a href="./dash2.html"><i class="fas fa-shopping-basket"></i>Orders</a>
+                <a href="#"><i class="fas fa-money-bill-alt"></i>Payments</a>
+                <a href="#"><i class="fas fa-comments"></i>Chat Service</a>
+                <a href="#"><i class="fas fa-chart-area"></i>Reports</a>
+            </div>
+            <div class="dash-body">
+                <div class="product-add">
+                    <a href="./dash3.html">Add New</a>
+                </div>
+                <div class="tbl">
+                    <table>
+                        <thead>
+                            <tr class="heading">
+                                <th>No.</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Address</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="image">
+                                    <img src="./res/imgs/sampleproduct1.jpg" alt="">
+                                </td>
+                                <td>Pineapple</td>
+                                <td>500</td>
+                                <td>200.00</td>
+                                <td>Nawala</td>
+                                <td class="edit">
+                                    <a href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                                <td class="del">
+                                    <a href="#">
+                                        <i class="fas fa-times-circle"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="image">
+                                    <img src="./res/imgs/sampleproduct1.jpg" alt="">
+                                </td>
+                                <td>Pineapple</td>
+                                <td>500</td>
+                                <td>200.00</td>
+                                <td>Nawala</td>
+                                <td class="edit">
+                                    <a href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                                <td class="del">
+                                    <a href="#">
+                                        <i class="fas fa-times-circle"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <div class="set1">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">...</a>
+                    </div>
+                    <div class="set2">
+                        <a href="#">First</a>
+                        <a href="#">Previous</a>
+                        <a href="#">Next</a>
+                        <a href="#">Last</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Social -->
+    <div class="social">
+        <a href="#"><img src="./res/facebook.png" alt=""></a>
+        <a href=""><img src="./res/insta.png" alt=""></a>
+        <a href=""><img src="./res/twitter.png" alt=""></a>
+        <a href=""><img src="./res/linkedin.png" alt=""></a>
+        <a href=""><img src="./res/youtube.png" alt=""></a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p class="company">Copyright &copy; 2021 - Helagen Green</p>
+        <p class="credit">Designed & Developed by WAHSANDARUWAN</p>
+    </footer>
+</body>
+</html>

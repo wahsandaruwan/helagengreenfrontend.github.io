@@ -1,0 +1,463 @@
+/* This file is for both sisu.html and sudetails.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+/* -----Reset----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* -----Common----- */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* -----Header----- */
+header{
+    position: relative;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #fff;
+}
+
+/* Logo */
+header .logo a{
+    font-family: 'Niconne';
+    font-size: 3rem;
+    color: #2ECC71;
+}
+
+/* Nav Menu */
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu li:not(:first-child){
+    margin-left: 40px;
+}
+
+header .menu li .ab-btn,
+header .menu li .con-btn{
+    padding: 7px 30px;
+    border: 3px #2ECC71 solid;
+    border-radius: 30px;
+    color: #2ECC71;
+}
+
+header .menu li .ab-btn:hover,
+header .menu li .con-btn:hover{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+header .menu li .cart-btn{
+    background-color: #2ECC71;
+    border: 3px #2ECC71 solid;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+header .menu li .cart-btn:hover{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* -----Back Shape----- */
+.backsh{
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    max-width: 1400px;
+    z-index: 1;
+}
+
+.backsh img{
+    width: 100%;
+}
+
+/* -----Back Fruit----- */
+.backfr{
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 10;
+    transform: rotate(10deg);
+}
+
+.backfr img{
+    width: 100%;
+}
+
+/* -----Back Man----- */
+.farmer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.farmer img{
+    width: 60%;
+    max-width: 650px;
+}
+
+/* -----Container----- */
+.container{
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.container .hero{
+    width: 400px;
+    background-color: #fff;
+    border: 3px #2ECC71 solid;
+    border-radius: 43px;
+    overflow: hidden;
+}
+
+.container .hero #si-show,
+.container .hero #su-show{
+    display: none;
+}
+
+/* Heading */
+.container .hero h2{
+    text-align: center;
+    margin-top: 30px;
+    color: #2ECC71;
+}
+
+/* Tabs */
+.container .hero .tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-bottom: 3px #2ECC71 solid;
+}
+
+.container .hero .tabs label{
+    flex-basis: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.container .hero .tabs label:first-child{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .hero .tabs label:last-child{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* Tab Toggle */
+.container .hero #si-show:checked ~ .forms .si-form{
+    display: flex;
+}
+
+.container .hero #si-show:checked ~ .forms .su-form{
+    display: none;
+}
+
+.container .hero #si-show:checked ~ .tabs label:first-child{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .hero #si-show:checked ~ .tabs label:last-child{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+.container .hero #su-show:checked ~ .forms .su-form{
+    display: flex;
+}
+
+.container .hero #su-show:checked ~ .forms .si-form{
+    display: none;
+}
+
+.container .hero #su-show:checked ~ .tabs label:last-child{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .hero #su-show:checked ~ .tabs label:first-child{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* SignIn, SignUp & SignUp Fill Forms */
+.container .hero .forms{
+    width: 100%;
+    max-height: 620px;
+    overflow-y: auto;
+}
+
+.container .hero .forms .si-form,
+.container .hero .forms .su-form,
+.container .hero .forms .sufill-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.container .hero .forms .si-form .cred,
+.container .hero .forms .su-form .cred,
+.container .hero .forms .sufill-form .cred{
+    position: relative;
+    width: 100%;
+}
+
+.container .hero .forms .si-form .cred input,
+.container .hero .forms .su-form .cred input,
+.container .hero .forms .su-form .cred select,
+.container .hero .forms .sufill-form .cred input,
+.container .hero .forms .sufill-form .cred textarea,
+.container .hero .forms .sufill-form .cred select{
+    width: 100%;
+    height: 45px;
+    border-radius: 29px;
+    border: 2px #2ECC71 solid;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 0px 10px 0px 50px;
+    font-size: 1rem;
+    color: #000;
+}
+
+.container .hero .forms .sufill-form .cred textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.container .hero .forms .si-form .cred i,
+.container .hero .forms .su-form .cred i,
+.container .hero .forms .sufill-form .cred i{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #2ECC71;
+}
+
+.container .hero .forms .si-form .cred input::placeholder,
+.container .hero .forms .su-form .cred input::placeholder,
+.container .hero .forms .sufill-form .cred input::placeholder,
+.container .hero .forms .sufill-form .cred textarea::placeholder{
+    color: #000;
+    opacity: 1;
+}
+
+.container .hero .forms .si-form .remember,
+.container .hero .forms .su-form .terms,
+.container .hero .forms .sufill-form .fileup{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container .hero .forms .sufill-form .fileup{
+    width: 100%;
+}
+
+.container .hero .forms .sufill-form .fileup input{
+    display: none;
+}
+
+.container .hero .forms .sufill-form .fileup label{
+   padding: 8px 20px;
+   width: 100%;
+   background-color: #fff;
+   border: 2px #2ECC71 solid;
+   border-radius: 29px;
+   color: #000; 
+   padding-left: 90px;
+}
+
+.container .hero .forms .sufill-form .fileup i{
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    font-size: 1.2rem;
+    color: #2ECC71;
+}
+
+.container .hero .forms .si-form .remember label,
+.container .hero .forms .su-form .terms label{
+    color: #2ECC71;
+    margin-left: 20px;
+}
+
+.container .hero .forms .si-form .si-btn,
+.container .hero .forms .su-form .su-btn,
+.container .hero .forms .sufill-form .sufill-btn{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2ECC71;
+    color: #fff;
+    border: 2px #2ECC71 solid;
+    border-radius: 36px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.container .hero .forms .si-form .si-btn:hover,
+.container .hero .forms .su-form .su-btn:hover,
+.container .hero .forms .sufill-form .sufill-btn:hover{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+.container .hero .forms .si-form .forgot{
+    color: #2ECC71;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.container .hero .forms .si-form .add-si,
+.container .hero .forms .su-form .add-su{
+    width: 100%;
+}
+
+
+.container .hero .forms .si-form .add-si a,
+.container .hero .forms .su-form .add-su a{
+    display: block;
+    text-align: center;
+    border-radius: 36px;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.container .hero .forms .si-form .add-si .google,
+.container .hero .forms .su-form .add-su .google{
+    background-color: #E74C3C;
+    border: 2px #E74C3C solid;
+    margin-bottom: 15px;
+}
+
+.container .hero .forms .si-form .add-si .google:hover,
+.container .hero .forms .su-form .add-su .google:hover{
+    background-color: #fff;
+    color: #E74C3C;
+}
+
+.container .hero .forms .si-form .add-si .facebook,
+.container .hero .forms .su-form .add-su .facebook{
+    background-color: #2980B9;
+    border: 2px #2980B9 solid;
+}
+
+.container .hero .forms .si-form .add-si .facebook:hover,
+.container .hero .forms .su-form .add-su .facebook:hover{
+    background-color: #fff;
+    color: #2980B9;
+}
+
+/* -----Social Icons----- */
+.social{
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 12;
+    padding: 15px 6px;
+    border: 3px #2ECC71 solid;
+    border-radius: 35px;
+}
+.social a{
+    display: block;
+}
+
+.social a img{
+    max-width: 40px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+}
+
+/* -----Footer----- */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+footer .company{
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .credit{
+    color: #2ECC71;
+    font-size: 1rem;
+}
+
+@media(max-height: 900px){
+    .container{
+        margin-top: 50px;
+    }
+
+    footer{
+        position: relative;
+    }
+}

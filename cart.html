@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./index.html">Helagen Green</a>
+        </div>
+        <!-- Nav Menu -->
+        <ul class="menu">
+            <li><a href="#" class="ab-btn">About Us</a></li>
+            <li><a href="#" class="con-btn">Contact Us</a></li>
+            <li><a href="./sisu.html" class="sisu-btn">SignIn or SignUp</a></li>
+            <li><a href="./cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </header>
+    <!-- Background Images -->
+    <div class="backsh">
+        <img src="./res/backsh.svg" alt="">
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Cart Table -->
+        <div class="tbl">
+            <table>
+                <thead>
+                    <tr class="heading">
+                        <th>Image</th>
+                        <th>Name & City</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Final Price</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="image">
+                            <img src="./res/imgs/sampleproduct1.jpg" alt="">
+                        </td>
+                        <td>
+                            Pineapple <br><span>Nawala</span>
+                        </td>
+                        <td class="qt">
+                            <label for="">Qty : </label>
+                            <input type="number">
+                        </td>
+                        <td>Rs. 200.00</td>
+                        <td>Rs. 1000.00</td>
+                        <td class="del">
+                            <a href="#">
+                                <i class="fas fa-times-circle"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="image">
+                            <img src="./res/imgs/sampleproduct2.jpg" alt="">
+                        </td>
+                        <td>
+                            Cabage <br><span>Ambalangoda</span>
+                        </td>
+                        <td class="qt">
+                            <label for="">Qty : </label>
+                            <input type="number">
+                        </td>
+                        <td>Rs. 110.00</td>
+                        <td>Rs. 2200.00</td>
+                        <td class="del">
+                            <a href="#">
+                                <i class="fas fa-times-circle"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pay">
+            <h2 class="s-total">Sub Total : Rs. 3200.00</h2>
+            <div class="pay-btn">
+                <a href="#" class="con-shop">Continue Shopping</a>
+                <a href="#" class="checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Social -->
+    <div class="social">
+        <a href="#"><img src="./res/facebook.png" alt=""></a>
+        <a href=""><img src="./res/insta.png" alt=""></a>
+        <a href=""><img src="./res/twitter.png" alt=""></a>
+        <a href=""><img src="./res/linkedin.png" alt=""></a>
+        <a href=""><img src="./res/youtube.png" alt=""></a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p class="company">Copyright &copy; 2021 - Helagen Green</p>
+        <p class="credit">Designed & Developed by WAHSANDARUWAN</p>
+    </footer>
+</body>
+</html>

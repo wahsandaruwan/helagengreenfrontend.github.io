@@ -1,0 +1,257 @@
+/* This file is for index.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+/* -----Reset----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* -----Common----- */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+/* -----Header----- */
+header{
+    position: relative;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #fff;
+}
+
+/* Logo */
+header .logo a{
+    font-family: 'Niconne';
+    font-size: 3rem;
+    color: #2ECC71;
+}
+
+/* Nav Menu */
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu li:not(:first-child){
+    margin-left: 40px;
+}
+
+header .menu li .ab-btn,
+header .menu li .con-btn{
+    padding: 7px 30px;
+    border: 3px #2ECC71 solid;
+    border-radius: 30px;
+    color: #2ECC71;
+}
+
+header .menu li .ab-btn:hover,
+header .menu li .con-btn:hover{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+header .menu li .sisu-btn{
+    padding: 7px 30px;
+    border: 3px #2ECC71 solid;
+    border-radius: 30px;
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+header .menu li .cart-btn{
+    background-color: #2ECC71;
+    border: 3px #2ECC71 solid;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+header .menu li .sisu-btn:hover,
+header .menu li .cart-btn:hover{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* -----Back Shape----- */
+.backsh{
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    max-width: 1400px;
+    z-index: 1;
+}
+
+.backsh img{
+    width: 100%;
+}
+
+/* -----Back Fruit----- */
+.backfr{
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 10;
+    transform: rotate(10deg);
+}
+
+.backfr img{
+    width: 100%;
+}
+
+/* -----Back Man----- */
+.farmer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.farmer img{
+    width: 60%;
+    max-width: 650px;
+}
+
+/* -----Container----- */
+.container{
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.container .hero{
+    background-color: #fff;
+    text-align: right;
+    padding: 30px;
+    border: 3px #2ECC71 solid;
+    border-radius: 43px;
+}
+
+.container .hero h2{
+    color: #2ECC71;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.container .hero h4{
+    color: #2ECC71;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.container .hero .call-btn a{
+    display: inline-block;
+    padding: 15px 40px;
+    border: 3px #2ECC71 solid;
+    border-radius: 42px;
+}
+
+.container .hero .call-btn .join-btn{
+    background-color: #fff;
+    color: #2ECC71;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+.container .hero .call-btn .join-btn:hover{
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.container .hero .call-btn .explore-btn{
+    background-color: #2ECC71;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.container .hero .call-btn .explore-btn:hover{
+    background-color: #fff;
+    color: #2ECC71;
+}
+
+/* -----Social Icons----- */
+.social{
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 12;
+    padding: 15px 6px;
+    border: 3px #2ECC71 solid;
+    border-radius: 35px;
+}
+.social a{
+    display: block;
+}
+
+.social a img{
+    max-width: 40px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+}
+
+/* -----Footer----- */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+footer .company{
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .credit{
+    color: #2ECC71;
+    font-size: 1rem;
+}
+
+@media(max-height: 900px){
+    .container{
+        margin-top: 50px;
+    }
+    
+    footer{
+        position: relative;
+    }
+}

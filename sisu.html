@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn or SignUp</title>
+    <link rel="stylesheet" href="./sisu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./index.html">Helagen Green</a>
+        </div>
+        <!-- Nav Menu -->
+        <ul class="menu">
+            <li><a href="#" class="ab-btn">About Us</a></li>
+            <li><a href="#" class="con-btn">Contact Us</a></li>
+            <li><a href="./cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </header>
+    <!-- Background Images -->
+    <div class="backsh">
+        <img src="./res/backsh.svg" alt="">
+    </div>
+    <div  class="backfr">
+        <img src="./res/backfruit.png" alt="">
+    </div>
+    <div  class="farmer">
+        <img src="./res/farmer.png" alt="">
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- SignIn & Sign Up Form -->
+        <div class="hero">
+            <input type="radio" id="si-show" name="sisu" checked>
+            <input type="radio" id="su-show" name="sisu">
+            <div class="tabs">
+                <label for="si-show">SignIn</label>
+                <label for="su-show">SignUp</label>
+            </div>
+            <div class="forms">
+                <form action="./shop.html" class="si-form">
+                    <div class="cred">
+                        <input type="email" class="email" placeholder="Email">
+                        <i class="fas fa-envelope-square"></i>
+                    </div>
+                    <div class="cred">
+                        <input type="password" class="pass" placeholder="Password">
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="rcheck">
+                        <label for="rcheck">Remember Me</label>
+                    </div>
+                    <button class="si-btn">Sign In</button>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                    <div class="add-si">
+                        <a href="#" class="google">Sign In with Google</a>
+                        <a href="#" class="facebook">Sign In with Facebook</a>
+                    </div>
+                </form>
+
+                <form action="./sudetails.html" class="su-form">
+                    <div class="cred">
+                        <input type="email" class="email" placeholder="Email">
+                        <i class="fas fa-envelope-square"></i>
+                    </div>
+                    <div class="cred">
+                        <input type="text" class="fname" placeholder="Full Name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="cred">
+                        <input type="password" class="pass" placeholder="Password">
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <div class="cred">
+                        <select id="ac-type">
+                            <option value="actype" disabled selected>Account Type</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="buyer">Buyer</option>
+                        </select>
+                        <i class="fab fa-get-pocket"></i>
+                    </div>  
+                    <div class="terms">
+                        <input type="checkbox" id="acheck">
+                        <label for="acheck">Accept terms and conditions</label>
+                    </div>                 
+                    <button class="su-btn">Sign Up</button>
+                    <div class="add-su">
+                        <a href="#" class="google">Sign Up with Google</a>
+                        <a href="#" class="facebook">Sign Up with Facebook</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Social -->
+    <div class="social">
+        <a href="#"><img src="./res/facebook.png" alt=""></a>
+        <a href=""><img src="./res/insta.png" alt=""></a>
+        <a href=""><img src="./res/twitter.png" alt=""></a>
+        <a href=""><img src="./res/linkedin.png" alt=""></a>
+        <a href=""><img src="./res/youtube.png" alt=""></a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p class="company">Copyright &copy; 2021 - Helagen Green</p>
+        <p class="credit">Designed & Developed by WAHSANDARUWAN</p>
+    </footer>
+</body>
+</html>
