@@ -319,7 +319,7 @@ header .menu li .cart-btn:hover{
 }
 
 .container .prod-des .other-details .reviews .farmer-rev .all-reviews{
-    max-height: 400px;
+    max-height: 250px;
     padding: 15px;
     border-radius: 30px;
     border: 2px #2ECC71 solid;
